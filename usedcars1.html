@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>USED CAR PRICES</title>
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
+  <!--<link rel="stylesheet" type="text/css" href="UsedCarStyle.css">-->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div id="Main">
+  <h1 align="center">GET THE BEST PRICE FOR YOUR CAR</h1>
+  <p align="center">Enter the details of your car</p>
+  <div align="center">
+    <form class ="form-horizontal" action="http://www.olx.in" method="post" >
+    <p class="col-sm-20">
+    <label class="col-sm-2 control-label" for="Brand">Brand Name:</label>
+    <input class="form-control input-sm" placeholder="e.g. Volkswagon" type="text" id="Brand" required="true">
+    </p>
+    <p class="col-sm-20">
+    <label class="col-sm-2 control-label" for="CarName">Model Name:</label>
+    <input class="form-control input-sm" placeholder="e.g. Sirocco" type="text" id="CarName" required="true">
+    </p>
+    <p class="col-sm-20">
+      <label class="col-sm-2 control-label">Car Type:</label>
+      <select name="CarType" required>
+        <option>Bus</option>
+        <option>Coupe</option>
+        <option>Sedan</option>
+        <option>Hatchback</option>
+        <option>Wagon</option>
+        <option>SUV</option>
+        <option>Convertible</option>
+      </select>
+    </p>
+    <p class="col-sm-20">
+      <label class="col-sm-2 control-label">Trasmission</label>
+      <select name="Trasmission" required>
+        <option>Manual</option>
+        <option>Automatic</option>
+      </select>
+    </p>
+    <p class="col-sm-20">
+      <label class="col-sm-2 control-label">Fuel Type:</label>
+      <p>
+        <label class="col-sm-2 control-label">Petrol: </label>
+        <input class="form-control input-sm" type="radio" name="Fuel" required="">
+        <label class="col-sm-2 control-label">Diesel: </label>
+        <input class="form-control input-sm" type="radio" name="Fuel" required="">
+    </p>
+    <p class="col-sm-20">
+    <label class="col-sm-2 control-label" for="Kms">Number of kilometers done:</label>
+    <input class="form-control input-sm" type="text" id="Kms" required="true">
+    </p>
+      
+    </form>
+    <div>
+      <p>
+        <button class="btn btn-primary btn-lg active" type="Submit">Submit</button>
+      </p>
+    </div>
+
+    </div>
+
+    <div id="foor" align="right">
+    <footer>
+      <a href="contactus.html">Contact Us</a>
+    </footer>
+    </div>
+  
+  
+</body>
+</html>
+
+
+
