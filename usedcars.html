@@ -2,40 +2,47 @@
 <html>
 <head>
   <title>USED CAR PRICES</title>
-  <style type="text/css">
-    h1{
-      font-family: sans-serif;
-      font-size: 50px;
-    }
-    form{
-      border: 5px solid #FFFFFF
-      font: italic large black sans-serif;
-      background-color: rgba(234, 229, 229, 0.25);
-      width: 200px;
-      height: 300px
-    }
-    body {
-      background-size: 100%;
-      background-image: url(http://zabrdast.com/i/2017/01/wallpaper-cars-ferrari-wallpapers-1080p.jpg);
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="bootstrap.css">
+  <link rel="stylesheet" type="text/css" href="UsedCarStyle.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
 <div id="Main">
   <h1 align="center">GET THE BEST PRICE FOR YOUR CAR</h1>
   <p align="center">Enter the details of your car</p>
   <div align="center">
-    <form action="http://www.olx.in" method="post">
-    <p>
-    <label for="Brand">Brand Name:</label>
-    <input placeholder="e.g. Volkswagon" type="text" id="Brand" required="true">
+    <form class ="form-horizontal" method="post">
+    <p class="col-sm-30">
+    <label class="col-sm-2 control-label Mname" for="Brand">Model Name:</label>
+    <input class="form-control input-sm" placeholder="e.g. Volkswagon" type="text" id="Brand" required="true">
     </p>
-    <p>
-    <label for="CarName">Model Name:</label>
-    <input placeholder="e.g. Sirocco" type="text" id="CarName" required="true">
+    <p class="col-sm-30">
+    <label class="col-sm-2 control-label" for="CarName">Brand Name:</label>
+    <select name="Brand Name" required>
+      <option>Alfa Romeo</option>
+      <option>Audi</option>
+      <option>BMW</option>
+      <option>Citroen</option>
+      <option>Fiat</option>
+      <option>Ford</option>
+      <option>Honda</option>
+      <option>Hyundai</option>
+      <option>Mazda</option>
+      <option>Mercedes Benz</option>
+      <option>Nissan</option>
+      <option>Opel</option>
+      <option>Peugeot</option>
+      <option>Porsche</option>
+      <option>Renault</option>
+      <option>Skoda</option>
+      <option>Suzuki</option>
+      <option>Toyota</option>
+      <option>VolksWagon</option>
+      <option>Volvo</option>
+    </select>    
     </p>
-    <p>
-      <label>Car Type:</label>
+    <p class="col-sm-30">
+      <label class="col-sm-2 control-label">Car Type:</label>
       <select name="CarType" required>
         <option>Bus</option>
         <option>Coupe</option>
@@ -46,35 +53,39 @@
         <option>Convertible</option>
       </select>
     </p>
-    <p>
-      <label>Trasmission</label>
+    <p class="col-sm-30">
+      <label class="col-sm-2 control-label">Trasmission</label>
       <select name="Trasmission" required>
         <option>Manual</option>
         <option>Automatic</option>
       </select>
     </p>
-    <p>
-      <label>Fuel Type:</label>
+    <p class="col-sm-30">
+      <label class="col-sm-2 control-label">Fuel Type:</label>
       <p>
-        <label>Petrol: </label>
-        <input type="radio" name="Fuel" required="">
-        <label>Diesel: </label>
-        <input type="radio" name="Fuel" required="">
+        <select name="Fuel Type" required>
+          <option>Petrol</option>
+          <option>Diesel</option>
+        </select>
     </p>
-    <p>
-    <label for="Kms">Number of kilometers done:</label>
-    <input type="text" id="Kms" required="true">
+    <p class="col-sm-30">
+    <label class="col-sm-2 control-label" for="Kms">Number of kilometers done:</label>
+    <input class="form-control input-sm" type="text" id="Kms" required="true">
     </p>
-
-
-    <input type="Submit" name="">
       
     </form>
+    <div>
+      <p>
+        <button class="btn btn-primary btn-lg active" type="Submit">Submit</button>
+      </p>
+    </div>
 
     </div>
 
-    <div align="right">
+    <div id="foor" align="right">
+    <footer>
       <a href="contactus.html">Contact Us</a>
+    </footer>
     </div>
   
   
