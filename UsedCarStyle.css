@@ -1,0 +1,23 @@
+ h1{
+      font-family: sans-serif;
+      font-size: 50px;
+    }
+    form{
+      border: 5px solid #FFFFFF
+      font: italic large black sans-serif;
+      background-color: rgba(234, 229, 229, 0.25);
+      width: 500px;
+      /*height: 400px;*/
+      height: relative;
+    }
+    .Mname{
+      width: 125px;
+    }
+    body {
+      background-size: 100%;
+      background-image: url(http://zabrdast.com/i/2017/01/wallpaper-cars-ferrari-wallpapers-1080p.jpg);
+    }
+
+    footer {
+        
+      background-color: white;    }
